@@ -1,10 +1,10 @@
 version: 2.1
 
-
- api_tests_job:
+jobs:
+  api_tests_job:
     docker:
       - image: circleci/node:18.12
-  steps:
+    steps:
       - checkout
 
       # Install ts-node as a development dependency
@@ -32,9 +32,6 @@ version: 2.1
           name: Run tests
           command: npm test
 
-
-
-jobs:
   ui_tests_job:
     docker:
       - image: circleci/node:18.12
@@ -47,6 +44,6 @@ jobs:
           name: Run contact us UI tests
           command: npx nightwatch test/contactUsPageTests.js
 
-	  name: Run search UI tests
+      - run:
+          name: Run search UI tests
           command: npx nightwatch test/homePageTests.js
-     
