@@ -1,0 +1,36 @@
+{
+  "name": "mock-user-auth-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./node_modules/mock-user-auth/bin/www.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2",
+    "jest-html-reporters": "^3.1.7",
+    "mock-user-auth": "^1.0.15",
+    "supertest": "^6.3.4"
+  },
+
+  "jest": {
+    "reporters": [
+      "default",
+      ["jest-html-reporters", {
+        "publicPath": "./html-report",
+        "filename": "report.html",
+        "expand": true
+      }]
+    ]
+  }
+  
+}
