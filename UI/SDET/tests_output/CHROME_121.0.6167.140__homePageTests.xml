@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="homePageTests"
+    errors="2" failures="0" hostname="" id="" package="homePageTests" skipped="0"
+    tests="1" time="21.09" timestamp="">
+  
+    <testcase name="Search for &#34;dress&#34; and verify search results" classname="homePageTests" time="10.54" assertions="3">
+
+    
+
+    
+
+    
+    <error message="Error while running &#34;elementIdText&#34; command: First argument passed to .elementIdText() should be a web element ID string. Received undefined." type="error"><![CDATA[
+    Error
+    at C:\Users\2021\SDET\test\homePageTests.js:27:15
+    at Array.forEach (&lt;anonymous&gt;)
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\2021\SDET\test\homePageTests.js:26:18)
+    at Object.apply (C:\Users\2021\AppData\Local\npm-cache\_npx\3fd69c9acfe5f546\node_modules\nightwatch\lib\api\_loaders\_base-loader.js:411:29)
+    at makePromise (C:\Users\2021\AppData\Local\npm-cache\_npx\3fd69c9acfe5f546\node_modules\nightwatch\lib\utils\index.js:185:28)
+    at C:\Users\2021\AppData\Local\npm-cache\_npx\3fd69c9acfe5f546\node_modules\nightwatch\lib\api\protocol\_base-action.js:131:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       Error
+   First argument passed to .elementIdText() should be a web element ID string. Received undefined.
+    See https://nightwatchjs.org/api/elementIdText.html
+
+ Error
+   Error while running &#34;elementIdText&#34; command: First argument passed to .elementIdText() should be a web element ID string. Received undefined.
+    See https://nightwatchjs.org/api/elementIdText.html
+
+
+    Error location:
+    C:\Users\2021\SDET\test\homePageTests.js:27
+    ––––––––––––––––––––––––––––––––––––––––––
+     25 | 
+     26 |     result.value.forEach(function(element) {
+     27 |       browser.elementIdText(element.ELEMENT, function(textResult) { 
+     28 |         browser.assert.ok(textResult.value.includes(&#39;Blouse&#39;), &#39;Search result contains expected product&#39;);
+     29 |         // You can add additional assertions for other product details as needed
+    ––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
