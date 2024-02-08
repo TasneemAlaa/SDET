@@ -25,7 +25,10 @@ $ nvm use 11
 Now using node v11 
   - run:
           name: Install dependencies
-          command: npm install
+          command: - npm install
+                   - npm install --save-dev nightwatch
+                   - npm install --save-dev selenium-server chromedriver
+
       - run:
           name: Run contact us UI tests
           command: npx nightwatch test/contactUsPageTests.js
