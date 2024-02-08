@@ -1,0 +1,15 @@
+  ui_tests_job:
+    docker:
+      - image: circleci/node:18.12
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Run contact us UI tests
+          command: npx nightwatch test/contactUsPageTests.js
+
+      - run:
+          name: Run search UI tests
+          command: npx nightwatch test/homePageTests.js
