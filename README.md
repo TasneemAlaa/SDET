@@ -35,7 +35,19 @@ Now using node v11
           command: npx nightwatch test/homePageTests.js
 ```
 
+## Mock User Auth API Test Suite
+# Overview
+This test suite validates all the API routes provided by the mock-user-auth module. It employs supertest for making HTTP requests.
+- Some of the test cases
 
+## Test Cases
+# 1. Route: /register
+# Test 1: Valid Registration
+- Objective:
+  Test registration with valid user data.
+# Test 2: Invalid Registration (Existing User)
+- Objective:
+   Test registration with already existing user credentials.
 
 # To Run The API Tests
 
