@@ -4,8 +4,7 @@ Automation test for MyStore website and API testing.
 ## UI TEST (My Store NightwatchJS Test)
 # 1. Contact Us Page Tests
 Different test cases were done on the Contact Us functionality.
- # Test 1:
- - Verify Required Fields Validation.
+ # Test 1: Verify Required Fields Validation.
   Objective:
  - Ensure that the required fields in the Contact Us form are validated properly.
  # Test 2: Verify Optional Fields Submission
