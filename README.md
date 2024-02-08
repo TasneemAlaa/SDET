@@ -19,11 +19,7 @@ Different test cases were done on the Contact Us functionality.
  - Ensure that the search functionality on the homepage retrieves accurate results for the keyword "dress".
 
 # To Run The UI Tests
-## Intro
 
-`nvm` allows you to quickly install and use different versions of node via the command line.
-
-**Example:**
 ```sh
 $ nvm use 11
 Now using node v11 
@@ -37,4 +33,35 @@ Now using node v11
       - run:
           name: Run search UI tests
           command: npx nightwatch test/homePageTests.js
+```
+
+
+
+# To Run The API Tests
+
+```sh
+    # Install ts-node as a development dependency
+      - run:
+          name: Install ts-node
+          command: npm install --save-dev ts-node
+
+      # Install mock-user-auth and supertest as regular dependencies
+      - run:
+          name: Install mock-user-auth and supertest
+          command: npm install mock-user-auth supertest
+
+      # Install jest as a development dependency
+      - run:
+          name: Install jest
+          command: npm install --save-dev jest
+
+      # Install jest-html-reporters as a development dependency
+      - run:
+          name: Install jest-html-reporters
+          command: npm install --save-dev jest-html-reporters
+
+      # Run your tests
+      - run:
+          name: Run API tests
+          command: npm test
 ```
