@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   api_tests_job:
     docker:
-      - image: circleci/node:18.12
+      - image: circleci/node:11.0
     steps:
       - checkout
 
