@@ -14,7 +14,27 @@ Different test cases were done on the Contact Us functionality.
   Objective:
  - Confirm that the Contact Us form can not be submitted without any of the required fields filled
 # 2. Homepage Tests
- # Test 1:
- - Verify Search for "Dress".
+ # Test 1: Verify Search for "Dress".
   Objective:
  - Ensure that the search functionality on the homepage retrieves accurate results for the keyword "dress".
+
+# To Run The UI Tests
+## Intro
+
+`nvm` allows you to quickly install and use different versions of node via the command line.
+
+**Example:**
+```sh
+$ nvm use 11
+Now using node v11 
+  - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Run contact us UI tests
+          command: npx nightwatch test/contactUsPageTests.js
+
+      - run:
+          name: Run search UI tests
+          command: npx nightwatch test/homePageTests.js
+```
