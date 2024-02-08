@@ -1,5 +1,6 @@
 # SDET
 Automation test for MyStore website and API testing.
+- In the Documents Folder you will find the test cases that were done in this project and also bug tickets for the bugs that were encountered while working on this project.
 ## UI TEST (My Store NightwatchJS Test)
 # 1. Contact Us Page Tests
 Different test cases were done on the Contact Us functionality.
